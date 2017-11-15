@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".edittext.EditTextAct">
+        <activity
+            android:name=".edittext.EditTextAct"
+            android:windowSoftInputMode="adjustPan">
+
+        </activity>
+        <activity android:name=".edittext.xml.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

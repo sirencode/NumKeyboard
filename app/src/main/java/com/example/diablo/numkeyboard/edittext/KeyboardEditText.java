@@ -1,5 +1,6 @@
 package com.example.diablo.numkeyboard.edittext;
 
+import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Context;
@@ -28,6 +29,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
+import android.widget.EditText;
 import android.widget.PopupWindow;
 
 import com.example.diablo.numkeyboard.R;
@@ -40,7 +42,8 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
 
-public class KeyboardEditText extends android.support.v7.widget.AppCompatEditText implements KeyboardView.OnKeyboardActionListener {
+@SuppressLint("AppCompatCustomView")
+public class KeyboardEditText extends EditText implements KeyboardView.OnKeyboardActionListener {
 
     private static final String TAG = "myLog";
     private Keyboard mKeyboard;
@@ -314,7 +317,8 @@ public class KeyboardEditText extends android.support.v7.widget.AppCompatEditTex
             //可以直接输入的字符(如0-9,.)，他们在键盘映射xml中的keycode值必须配置为该字符的ASCII码
             editable.insert(start, key.label);
 
-        } else {
+        } else if (primaryCode == -112){
+            editable.clear();
             //其他一些暂未开放的键指令，如next到下一个输入框等指令
         }
     }

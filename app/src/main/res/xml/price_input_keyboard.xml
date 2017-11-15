@@ -14,6 +14,10 @@
         <Key
             android:codes="51"
             android:keyLabel="3" />
+        <Key
+            android:codes="-3"
+            android:isRepeatable="true"
+            android:keyIcon="@mipmap/puckup_keyboard" />
     </Row>
     <Row>
         <Key
@@ -25,6 +29,9 @@
         <Key
             android:codes="54"
             android:keyLabel="6" />
+        <Key
+            android:codes="-112"
+            android:keyLabel="清空" />
     </Row>
     <Row>
         <Key
@@ -36,14 +43,13 @@
         <Key
             android:codes="57"
             android:keyLabel="9" />
+        <Key
+            android:codes="-5"
+            android:isRepeatable="true"
+            android:keyIcon="@mipmap/keyboard_delete_icon" />
     </Row>
 
     <Row>
-        <!--<Key-->
-        <!--android:codes="-3"-->
-        <!--android:keyEdgeFlags="left"-->
-        <!--android:keyIcon="@drawable/sym_keyboard_done"-->
-        <!--android:keyWidth="16%p" />-->
         <Key
             android:codes="46"
             android:keyLabel="." />
@@ -52,14 +58,11 @@
             android:keyLabel="0" />
 
         <Key
-            android:codes="-3"
-            android:keyIcon="@mipmap/ic_launcher"
-            android:isRepeatable="true"/>
-        <!--<Key-->
-        <!--android:codes="-5"-->
-        <!--android:isRepeatable="true"-->
-        <!--android:keyEdgeFlags="right"-->
-        <!--android:keyIcon="@drawable/sym_keyboard_delete"-->
-        <!--android:keyWidth="17%p" />-->
+            android:codes="-111"
+            android:keyLabel="" />
+
+        <Key
+            android:codes="-4"
+            android:keyLabel="确定" />
     </Row>
 </Keyboard>

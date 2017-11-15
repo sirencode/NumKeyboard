@@ -9,6 +9,9 @@ import android.graphics.drawable.Drawable;
 import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
 import android.util.AttributeSet;
+import android.util.Log;
+import android.view.KeyEvent;
+import android.view.View;
 
 import com.example.diablo.numkeyboard.R;
 
@@ -100,5 +103,4 @@ public class MyKeyboardView extends KeyboardView {
             canvas.restore();
         }
     }
-
 }
